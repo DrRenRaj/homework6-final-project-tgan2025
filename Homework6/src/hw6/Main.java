@@ -162,24 +162,23 @@ public class Main {
 			System.out.println("8. Exit Menu");
 			System.out.println();
 			
-			String selection = scan.next();
-			scan.nextLine();
+			String selection = scan.nextLine();
 			
-			if (selection == "1") {
+			if (selection.equals("1")) {
 				addBook();
-			} else if (selection == "2") {
+			} else if (selection.equals("2")) {
 				removeBook();
-			} else if (selection == "3") {
+			} else if (selection.equals("3")) {
 				displayBooks();
-			} else if (selection == "4") {
+			} else if (selection.equals("4")) {
 				titleSearch();
-			} else if (selection == "5") {
+			} else if (selection.equals("5")) {
 				authorSearch();
-			} else if (selection == "6") {
+			} else if (selection.equals("6")) {
 				checkOut();
-			} else if (selection == "7") {
+			} else if (selection.equals("7")) {
 				returnBook();
-			} else if (selection == "8") {
+			} else if (selection.equals("8")) {
 				System.out.println("Exiting Menu");
 				break;
 			} else {
@@ -233,7 +232,7 @@ public class Main {
 		System.out.println(library.returnBook(isbn));
 	}
 }
-
+  
 
 
 
